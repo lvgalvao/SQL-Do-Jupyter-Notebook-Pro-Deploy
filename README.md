@@ -20,7 +20,7 @@ PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD),
 
 Quais são as formas de rodar PostgreSQL usando Docker?
 
-### Usando a imagem oficial do PostgreSQL
+### 1) Usando a imagem oficial do PostgreSQL
 
 1. **Pull da Imagem do PostgreSQL**: Se você ainda não tem a imagem do PostgreSQL, pode obtê-la usando o comando `docker pull`:
     
@@ -48,7 +48,7 @@ Quais são as formas de rodar PostgreSQL usando Docker?
    * **Persistência de Dados**: Armazena os dados do banco de dados no volume `meu_volume_postgres`. Mesmo se o contêiner for removido, os dados permanecerão no volume e estarão disponíveis quando você criar um novo contêiner com o mesmo volume.
    * **Gerenciamento de Volume**: O Docker gerencia este volume, e você pode encontrar os dados armazenados no local de armazenamento de volumes do Docker no seu sistema host.
 
-### Criando um arquivo Dockerfile
+### 2) Criando um arquivo Dockerfile
 
 O Dockerfile é um arquivo de texto que contém todas as instruções necessárias para criar uma imagem Docker. Você pode criar uma imagem Docker do PostgreSQL usando um Dockerfile. Aqui, vou mostrar como criar uma imagem Docker do PostgreSQL usando um Dockerfile.
 
