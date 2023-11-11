@@ -1,6 +1,6 @@
 # Banco de Dados
 
-Para essa atividade vamos usar o PostgreSQL e o dbeaver
+Para essa atividade vamos usar o PostgreSQL e o pg4admin
 
 ## O que é um Banco de Dados?
 
