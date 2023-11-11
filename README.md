@@ -291,5 +291,32 @@ Para verificar como foi feita toda a operação de CRUD no SQLAlchemy, olhar a p
 
 Porém, vamos realizar as operações de CRUD usando o FastAPI.
 
-### Criar o banco na Render
+### Criar o a Tabela bronze
 
+```sql
+
+CREATE TABLE bronze_produtos (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(255),
+    descricao TEXT,
+    preco NUMERIC(10,2)
+);
+
+```
+
+#### Podemos inserir valores
+
+```sql
+
+INSERT INTO bronze_produtos (titulo, descricao, preco) VALUES 
+('Cadeira Gamer', 'Cadeira confortável para fazer live', 1200.00),
+('Workshop', 'Workshop de deploy', 100.00),
+(null, 'Iphone 14', 2000.00),
+('Geladeira', 'Geladeira Automatica', 3200.00),
+('Fogão', 'De 6 bocas', 1100.00),
+('Cama', 'De Solteiro', -2000.00),
+('Mesa', 'De Jantar', 1700.00),
+('Televisão', 'Colorida', 1750.00),
+('Playstation', 'Com vários jogos', 1800.00;)
+
+```
