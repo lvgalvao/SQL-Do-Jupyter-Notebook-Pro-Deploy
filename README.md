@@ -157,7 +157,7 @@ Para instalar o pgAdmin, vamos acessar o Docker Hub e buscar a imagem oficial e 
 * Para se conectar a este banco de dados PostgreSQL, você deve usar obter o endereço IP do container docker
     
     ```bash
-    docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' nome_do_container_postgres
+    docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' meu_container_postgres
     ```
     
 Após isso você pode acessar o pgAdmin no seu navegador e criar uma conexão com o banco de dados.
@@ -290,4 +290,6 @@ Todos os comandos SQL que você executou anteriormente podem ser executados usan
 Para verificar como foi feita toda a operação de CRUD no SQLAlchemy, olhar a pasta SRC.
 
 Porém, vamos realizar as operações de CRUD usando o FastAPI.
+
+### Criar o banco na Render
 
